@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <!DOCTYPE html>
+<body> <!-- main section for content displayed -->
+
+<!-- This may be a typo start-->
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,11 +19,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<!-- This may be a typo end -->
 <body>
-    <h1>Todo List: </h1>
-    <ul class="todoItems">
-    <% for(let i=0; i < items.length; i++) {%>
-        <li class="item">
+    <h1>Todo List: </h1> <!--main heading of the page  -->
+    <ul class="todoItems"> <!--unordered list with a class  -->
+    <% for(let i=0; i < items.length; i++) {%> <!-- Use EJS to start FOR loop  -->
+        <li class="item"> <!--Create a list item with a class of Item  -->
             <% if(items[i].completed === true) {%>
                 <span class='completed'><%= items[i].thing %></span>
             <% }else{ %>
